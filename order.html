@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>订单确认</title>
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/layout.css">
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta content="telephone=no" name="format-detection" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1,user-scalable=0">
+</head>
+<body>
+<div class="topfixed">
+  <header class="header">
+    <a href="###" class="a-back"></a>
+    <h2>订单确认</h2>
+  </header>
+</div>
+<div class="content" style="padding:45px 0 0;">
+  <div class="car-link" onclick="return link_modal();">
+    <p class="car-name">沪JE6177</p>
+    <p class="desc">共办理2条，扣分0分</p>
+  </div>
+  <div class="order-list">
+    <p>
+      <label>罚款总额</label>
+      <span class="orange">￥<em>200</em></span>
+    </p>
+    <p>
+      <label>代办服务费</label>
+      <span class="orange">￥<em>56</em></span>
+    </p>
+    <div class="worry">
+      <p class="fl">
+        <label>加急处理</label>
+        <span>（2小时内销网）</span>
+        <i class="i_icon" onclick="return explain();"></i>
+      </p>
+      <i class="switch off"></i>
+      <!-- <i class="switch on"></i> -->
+    </div>
+  </div>
+  <p class="order-tips">办理时间为2-7日工作日，具体办理进度请查看订单状态</p>
+</div>
+<div class="btmfixed">
+  <footer class="footer">
+    <div class="sum">
+      <p class="orange order">合计￥<em>256</em></p>
+    </div>
+    <a href="###" class="a-link">去支付</a>
+  </footer>
+</div>
+<div id="bg-gray" class="order-bg"></div>
+<div class="modal link-modal">
+  <ul class="link-list">
+    <li>
+      <p>上海路难关医院路段</p>
+      <p class="f12">2017-12-11 12:25:00</p>
+      <p>遇行人正在通过人行道未停车让行</p>
+      <p>
+        <span>罚款100元|</span>
+        <span>扣分0分|</span>
+        <span>代办费28元</span>
+      </p>
+    </li>
+    <li>
+      <p>上海路难关医院路段</p>
+      <p class="f12">2017-12-11 12:25:00</p>
+      <p>遇行人正在通过人行道未停车让行遇行人正在通过人行道未停车让行遇行人正在通过人行道未停车让行</p>
+      <p>
+        <span>罚款100元|</span>
+        <span>扣分0分|</span>
+        <span>代办费28元</span>
+      </p>
+    </li>
+  </ul>
+  <i class="cancel"></i>
+</div>
+<div class="modal explain-modal">
+  <h3 class="tit">加急业务说明</h3>
+  <ul class="con">
+    <li><i class="point"></i><span>加急订单处理时间为2小时。仅在工作日（周一至周五08:50—17:00）受理，周末及假日不受理</span></li>
+    <li><i class="point"></i><span>加急受理范围：加急业务仅支持粤牌在广东江西及福建、京牌在北京、闽牌在福建、苏A牌在南京的违章</span></li>
+    <li><i class="point"></i><span>加急服务按违章的条数收费，一个订单内有多个可加急办理的违章单则按违章条数叠加收取费用。</span></li>
+    <li><i class="point"></i><span>加急只能处理扣分单和特殊单之外的非扣分单，若无法在2小时内办结，会退还加急服务费</span></li>
+    <li><i class="point"></i><span>缴费成功后，网上违章记录消除可能会延迟，但不影响年审等车务办理</span></li>
+    <li><i class="point"></i><span>最终业务解释权归车行易所有</span></li>
+  </ul>
+  <a href="###" class="explain-btn">知道了</a>
+</div>
+<script src="js/jquery.min.js"></script>
+<script>
+function link_modal(){
+  var bggray = $('#bg-gray');
+  var modal = $('.link-modal');
+  bggray.css('width',window.screen.width);
+  bggray.css('height',window.screen.height);
+  bggray.show();
+  modal.show();
+}
+function explain(){
+  var bggray = $('#bg-gray');
+  var modal = $('.explain-modal');
+  bggray.css('width',window.screen.width);
+  bggray.css('height',window.screen.height);
+  bggray.show();
+  modal.show();
+}
+</script>
+</body>
+</html>

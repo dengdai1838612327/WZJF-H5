@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>违章详情</title>
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/layout.css">
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta content="telephone=no" name="format-detection" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1,user-scalable=0">
+</head>
+<body>
+<div class="topfixed">
+  <header class="header">
+    <a href="###" class="a-back"></a>
+    <h2>违章详情</h2>
+  </header>
+</div>
+<div class="content" style="padding:45px 0 50px;">
+  <div class="detail">
+    <div class="detail-head">
+      <h3>苏E6N0D6</h3>
+      <ul>
+        <li>
+          <span>违章条数</span>
+          <em>2条</em>
+        </li>
+        <li>
+          <span>罚款金额</span>
+          <em>100元</em>
+        </li>
+        <li>
+          <span>扣分</span>
+          <em>6分</em>
+        </li>
+      </ul>
+    </div>
+    <div class="detail-list daiban">
+      <div class="illegal">
+        <div class="illegal-item">
+          <section>
+            <p class="detail-tips">该违章可代办</p>
+            <div class="bd_b">
+              <ul class="clearfix">
+                <li>
+                  <p class="top">扣分</p>
+                  <p class="btm">3<span>分</span></p>
+                </li>
+                <li>
+                  <p class="top">罚款金额</p>
+                  <p class="btm">50<span>元</span></p>
+                </li>
+                <li>
+                  <p class="top">代办费用</p>
+                  <p class="btm">0<span>元</span></p>
+                </li>
+              </ul>
+              <div class="choice"><i></i></div>
+            </div>
+            <div class="detail-loca">
+              <p class="time">2017-12-11 12:55:00</p>
+              <p class="desc">遇行人正在通过人行道未停车让行</p>
+              <p class="posi">上海路难关医院路段</p>
+            </div>
+          </section>
+          <div class="btm_bg">背景</div>
+        </div>
+      </div>
+      <div class="illegal">
+        <div class="illegal-item">
+          <section>
+            <p class="detail-tips">该违章可代办</p>
+            <div class="bd_b">
+              <ul class="clearfix">
+                <li>
+                  <p class="top">扣分</p>
+                  <p class="btm">3<span>分</span></p>
+                </li>
+                <li>
+                  <p class="top">罚款金额</p>
+                  <p class="btm">50<span>元</span></p>
+                </li>
+                <li>
+                  <p class="top">代办费用</p>
+                  <p class="btm">0<span>元</span></p>
+                </li>
+              </ul>
+              <div class="choice"><i></i></div>
+            </div>
+            <div class="detail-loca">
+              <p class="time">2017-12-11 12:55:00</p>
+              <p class="desc">遇行人正在通过人行道未停车让行</p>
+              <p class="posi">上海路难关医院路段</p>
+            </div>
+          </section>
+          <div class="btm_bg">背景</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="btmfixed">
+  <footer class="footer">
+    <div class="sum">
+      <p class="orange">合计2笔</p>
+      <p class="gray">
+        <span>扣0分</span>
+        <span>共256元</span>
+      </p>
+    </div>
+    <a href="###" class="a-link" onclick="return submit();">去办理</a>
+  </footer>
+</div>
+<div id="bg-gray"></div>
+<div class="modal confirm">
+  <div class="modal-con">
+    <p>请补充车辆违章代办所需的车主本人资料</p>
+  </div>
+  <div class="modal-btm">
+    <span>取消</span>
+    <span>补充资料</span>
+  </div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script>
+function submit(){
+  var bggray = $('#bg-gray');
+  var modal = $('.modal');
+  bggray.css('width',window.screen.width);
+  bggray.css('height',window.screen.height);
+  bggray.show();
+  modal.show();
+}
+</script>
+</body>
+</html>
