@@ -78,6 +78,22 @@
 	border: none;
 	color: #666;
 }
+.car-type .fl{
+	display: inline-block;
+	margin-right: 15px;
+}
+.car-type .fl i.check{
+	background: url(../images/choice.png) 0 0 no-repeat;
+	background-size: 19px 19px;
+	display: inline-block;
+	width: 19px;
+	height: 19px;
+	margin-right: 5px;
+	vertical-align: -4px;
+}
+.car-type .fl i.check.off{
+	background: url(../images/choiceoff.png) no-repeat scroll 0 0 / 19px 19px;
+}
 .bj-vehicle .item i.i_icon {
 	background: url(../images/1_2_1.png) no-repeat scroll 0 0 / 20px 20px;
 	height: 20px;
@@ -94,12 +110,16 @@
 	margin-top: 5px;
 }
 .protocol i {
-	background: url(../images/1_2_2.png) no-repeat scroll 0 0 / 14px 14px;
+	background: url(../images/choice.png) 0 0 no-repeat;
+	background-size: 19px 19px;
 	display: inline-block;
-	height: 14px;
+	width: 19px;
+	height: 19px;
 	margin-right: 5px;
-	vertical-align: -2px;
-	width: 14px;
+	vertical-align: middle;
+}
+.protocol i.off{
+	background: url(../images/choiceoff.png) no-repeat scroll 0 0 / 19px 19px;
 }
 .protocol a {
 	color: #3d96ff;
@@ -149,6 +169,29 @@
 }
 .sel-modal span.cur i {
 	color: #ccc;
+}
+.num-modal{
+	display: none;
+	background-color: #fff;
+	position: fixed;
+	top: 50%;
+	left: 5%;
+	width: 90%;
+	height: 210px;
+	margin-top: -105px;
+	border-radius: 5px;
+	z-index: 201;
+}
+.num-modal p{
+	width: 100%;
+	text-align: center;
+	color: #666;
+	font-size: 14px;
+	margin: 20px 0;
+}
+.num-modal img{
+	display: block;
+	margin: 0 auto;
 }
 /*page-none*/
 .empty {
@@ -316,11 +359,14 @@
 }
 .daiban .choice i{
 	background: url(../images/choice.png) 0 0 no-repeat;
-	background-size: 18px 18px;
+	background-size: 19px 19px;
 	display: block;
-	width: 18px;
-	height: 18px;
+	width: 19px;
+	height: 19px;
 	margin: 31px auto;
+}
+.daiban .choice i.off{
+	background: url(../images/choiceoff.png) 0 0 no-repeat/19px 19px;
 }
 .footer{
 	width: 100%;

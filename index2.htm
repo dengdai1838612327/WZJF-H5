@@ -14,36 +14,89 @@
 </head>
 <body>
 <div class="topfixed">
-  <header class="header"><a href="###" class="a-back"></a>
-    <h2>编辑车辆</h2><a class="a-rt" href="###">关闭</a>
+  <header class="header">
+    <a href="###" class="a-back"></a>
+    <h2>编辑车辆</h2>
+    <a class="a-rt" href="###">关闭</a>
   </header>
 </div>
 <div class="content" style="padding:45px 0 0;">
   <div class="bj-vehicle">
-    <div class="item"> <span class="s-l bd-r">车牌号码</span>
-      <div class="d-r"><em onclick="return goods_sel();">沪</em>
+    <div class="item">
+      <span class="s-l bd-r">车牌号码</span>
+      <div class="d-r">
+        <em onclick="return goods_sel();">沪</em>
         <input name="" type="text" class="input1" value="请输入车牌号">
       </div>
     </div>
-    <div class="item"> <span class="s-l">发动机号</span>
+    <div class="item">
+      <span class="s-l">车牌类型</span>
+      <div class="d-r car-type">
+        <p class="fl">
+          <i class="check"></i>
+          <span>大型汽车</span>
+        </p>
+        <p class="fl">
+          <i class="check off"></i>
+          <span>小型汽车</span>
+        </p>
+      </div>
+    </div>
+    <div class="item">
+      <span class="s-l">发动机号</span>
       <div class="d-r">
         <input name="" type="text" class="input1" value="请输入完整发动机号">
-        <i class="i_icon"></i> </div>
+        <i class="i_icon" onclick="return num_modal();"></i>
+      </div>
     </div>
-    <div class="item"> <span class="s-l">手机号码</span>
+    <div class="item">
+      <span class="s-l">手机号码</span>
       <div class="d-r">
         <input name="" type="text" class="input1" value="请输入手机号码">
       </div>
     </div>
-    <p class="protocol"> <i></i>已经阅读并同意 <a href="###">&lt;&lt;授权协议&gt;&gt;</a> </p>
+    <p class="protocol">
+      <i></i>
+      <!-- <i class="off"></i> -->
+      已经阅读并同意 <a href="###">&lt;&lt;授权协议&gt;&gt;</a>
+    </p>
   </div>
   <div class="btn">
     <input name="" type="button" class="btn1" value="提&nbsp;交">
   </div>
 </div>
 <div id="bg-gray"></div>
-<div class="sel-modal"> <span>吉<i>吉林</i></span> <span>吉<i>吉林</i></span> <span>吉<i>吉林</i></span> <span>吉<i>吉林</i></span> <span>吉<i>吉林</i></span> <span>吉<i>吉林</i></span> <span>吉<i>吉林</i></span> <span>吉<i>吉林</i></span> <span>吉<i>吉林</i></span> <span>吉<i>吉林</i></span> <span>吉<i>吉林</i></span> <span>吉<i>吉林</i></span> <span>吉<i>吉林</i></span> <span>吉<i>吉林</i></span> <span>吉<i>吉林</i></span> <span>吉<i>吉林</i></span> <span>吉<i>吉林</i></span> <span>吉<i>吉林</i></span> <span class="cur">吉<i>吉林</i></span> <span>吉<i>吉林</i></span> <span>吉<i>吉林</i></span> <span>吉<i>吉林</i></span> <span>吉<i>吉林</i></span> <span>吉<i>吉林</i></span> </div>
-<script src="js/jquery.min.js"></script> 
+<div class="sel-modal">
+  <span>吉<i>吉林</i></span>
+  <span>吉<i>吉林</i></span>
+  <span>吉<i>吉林</i></span>
+  <span>吉<i>吉林</i></span>
+  <span>吉<i>吉林</i></span>
+  <span>吉<i>吉林</i></span>
+  <span>吉<i>吉林</i></span>
+  <span>吉<i>吉林</i></span>
+  <span>吉<i>吉林</i></span>
+  <span>吉<i>吉林</i></span>
+  <span>吉<i>吉林</i></span>
+  <span>吉<i>吉林</i></span>
+  <span>吉<i>吉林</i></span>
+  <span>吉<i>吉林</i></span>
+  <span>吉<i>吉林</i></span>
+  <span>吉<i>吉林</i></span>
+  <span>吉<i>吉林</i></span>
+  <span>吉<i>吉林</i></span>
+  <span class="cur">吉<i>吉林</i></span>
+  <span>吉<i>吉林</i></span>
+  <span>吉<i>吉林</i></span>
+  <span>吉<i>吉林</i></span>
+  <span>吉<i>吉林</i></span>
+  <span>吉<i>吉林</i></span>
+</div>
+<div class="num-modal">
+  <p>怎么查找车身架号和发动机号?</p>
+  <img src="images/card.jpg" width="188" height="129">
+</div>
+<script src="js/jquery.min.js"></script>
 <script>
 function goods_sel() {
   var bggray = $("#bg-gray");
@@ -52,6 +105,15 @@ function goods_sel() {
   bggray.css("width", window.screen.width);
   bggray.show();
   modal.show();
-}</script>
+}
+function num_modal() {
+  var bggray = $("#bg-gray");
+  var modal = $(".num-modal");
+  bggray.css("height", window.screen.height);
+  bggray.css("width", window.screen.width);
+  bggray.show();
+  modal.show();
+}
+</script>
 </body>
 </html>
