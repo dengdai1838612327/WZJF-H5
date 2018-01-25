@@ -82,8 +82,8 @@
 	display: inline-block;
 	margin-right: 15px;
 }
-.car-type .fl i.check{
-	background: url(../images/choice.png) 0 0 no-repeat;
+.car-type .fl i{
+	background: url(../images/choiceoff.png) 0 0 no-repeat;
 	background-size: 19px 19px;
 	display: inline-block;
 	width: 19px;
@@ -91,8 +91,9 @@
 	margin-right: 5px;
 	vertical-align: -4px;
 }
-.car-type .fl i.check.off{
-	background: url(../images/choiceoff.png) no-repeat scroll 0 0 / 19px 19px;
+.car-type .fl i.cur{
+	background: url(../images/choice.png) no-repeat scroll 0 0;
+	background-size: 19px 19px;
 }
 .bj-vehicle .item i.i_icon {
 	background: url(../images/1_2_1.png) no-repeat scroll 0 0 / 20px 20px;
@@ -110,7 +111,7 @@
 	margin-top: 5px;
 }
 .protocol i {
-	background: url(../images/choice.png) 0 0 no-repeat;
+	background: url(../images/choiceoff.png) 0 0 no-repeat;
 	background-size: 19px 19px;
 	display: inline-block;
 	width: 19px;
@@ -118,8 +119,9 @@
 	margin-right: 5px;
 	vertical-align: middle;
 }
-.protocol i.off{
-	background: url(../images/choiceoff.png) no-repeat scroll 0 0 / 19px 19px;
+.protocol i.cur{
+	background: url(../images/choice.png) no-repeat scroll 0 0;
+	background-size: 19px 19px;
 }
 .protocol a {
 	color: #3d96ff;
@@ -358,15 +360,16 @@
 	height: 80px;
 }
 .daiban .choice i{
-	background: url(../images/choice.png) 0 0 no-repeat;
+	background: url(../images/choiceoff.png) 0 0 no-repeat;
 	background-size: 19px 19px;
 	display: block;
 	width: 19px;
 	height: 19px;
 	margin: 31px auto;
 }
-.daiban .choice i.off{
-	background: url(../images/choiceoff.png) 0 0 no-repeat/19px 19px;
+.daiban .choice i.cur{
+	background: url(../images/choice.png) 0 0 no-repeat;
+	background-size: 19px 19px;
 }
 .footer{
 	width: 100%;
